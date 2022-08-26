@@ -34,6 +34,12 @@ class ViewController: UIViewController {
 
     }
 
-
+    @IBAction func playButtonClicked(_ sender: UIButton) {
+        mainPoster.image = UIImage(named: "movie\(Int.random(in: 1...10))")
+        previewPoster1.image = UIImage(named: "movie\(Int.random(in: 1...10))")
+        previewPoster2.image = UIImage(named: "movie\(Int.random(in: 1...10))")
+        previewPoster3.image = UIImage(named: "movie\(Int.random(in: 1...10))")
+    }
+    
 }
 
