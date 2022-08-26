@@ -168,9 +168,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="signUpButtonClicked:" destination="rSy-lg-rd6" eventType="touchUpInside" id="sMk-mu-SVC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bVs-Q6-okK"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="VX3-O8-lQw" appends="YES" id="dxp-ux-gIo"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="emailOrNumberTextField" destination="NGq-kU-kps" id="otM-p9-FrK"/>
@@ -183,6 +190,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwh-Du-6E7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="VX3-O8-lQw">
+                    <connections>
+                        <action selector="tapGestureClicked:" destination="rSy-lg-rd6" id="56P-68-B0t"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1013.0434782608696" y="79.6875"/>
         </scene>

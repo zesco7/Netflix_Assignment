@@ -21,8 +21,6 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         view.backgroundColor = .black
         
         emailOrNumberTextField.placeholder = "이메일 주소 또는 전화번호"
@@ -34,6 +32,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         passwordField.backgroundColor = .systemGray
         passwordField.layer.cornerRadius = 10
         passwordField.textAlignment = .center
+        passwordField.isSecureTextEntry = true
         
         nicknameTextField.placeholder = "닉네임"
         nicknameTextField.backgroundColor = .systemGray
@@ -49,6 +48,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         promotionCodeTextField.backgroundColor = .systemGray
         promotionCodeTextField.layer.cornerRadius = 10
         promotionCodeTextField.textAlignment = .center
+        promotionCodeTextField.keyboardType = .numberPad
             
         signUpButton.setTitle("회원가입", for: .normal)
         signUpButton.setTitleColor(.black, for: .normal)
@@ -60,8 +60,29 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         signUpSwitch.onTintColor = .red
   
     }
-
-
+    
+    
+    @IBAction func signUpButtonClicked(_ sender: UIButton) {
+        if emailOrNumberTextField.hasText == false {
+            emailOrNumberTextField.attributedPlaceholder = NSAttributedString(string: "이메일 또는 전화번호는 필수입력입니다.", attributes: [.foregroundColor : UIColor.red])
+        }
+        if passwordField.hasText == false {
+            passwordField.attributedPlaceholder = NSAttributedString(string: "비밀번호는 필수입력입니다.", attributes: [.foregroundColor : UIColor.red])
+        }
+        
+        /*1.왜 위에 코드는 되고 아래코드는 안되는지?, 2.guard let표현으로는 어떻게 변경?
+        if emailOrNumberTextField.text == nil && passwordField.text == nil {
+            emailOrNumberTextField.text = "이메일 주소 또는 전화번호는 필수입력입니다."
+            passwordField.text = "비밀번호는 필수입력입니다."
+        }
+         */
+       
+    }
+    
+    @IBAction func tapGestureClicked(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
  
 
 }
