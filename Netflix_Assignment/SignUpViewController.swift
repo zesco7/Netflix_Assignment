@@ -9,7 +9,6 @@ import UIKit
 
 class SignUpViewController: UIViewController, UITextFieldDelegate {
     
-    
     @IBOutlet weak var emailOrNumberTextField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var nicknameTextField: UITextField!
@@ -60,7 +59,6 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         signUpSwitch.onTintColor = .red
   
     }
-    
     
     @IBAction func signUpButtonClicked(_ sender: UIButton) {
         if emailOrNumberTextField.hasText == false {

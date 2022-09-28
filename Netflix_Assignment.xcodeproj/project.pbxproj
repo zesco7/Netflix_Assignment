@@ -14,6 +14,14 @@
 		98769FC228B8A77900DE421F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98769FC128B8A77900DE421F /* Assets.xcassets */; };
 		98769FC528B8A77900DE421F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98769FC328B8A77900DE421F /* LaunchScreen.storyboard */; };
 		98769FF128B901E600DE421F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98769FF028B901E600DE421F /* SignUpViewController.swift */; };
+		98E8749A28E43D1800F72435 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 98E8749928E43D1800F72435 /* SnapKit */; };
+		98E8749D28E43EDE00F72435 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8749C28E43EDD00F72435 /* BaseViewController.swift */; };
+		98E874A528E44BC600F72435 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E874A428E44BC600F72435 /* FirstViewController.swift */; };
+		98E874A728E44C5D00F72435 /* CategoryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E874A628E44C5D00F72435 /* CategoryButtonView.swift */; };
+		98E874A928E44C8C00F72435 /* PreviewImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E874A828E44C8C00F72435 /* PreviewImageView.swift */; };
+		98E874AC28E45F5F00F72435 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E874AB28E45F5F00F72435 /* CustomLabel.swift */; };
+		98E874AE28E460C800F72435 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E874AD28E460C800F72435 /* BaseView.swift */; };
+		98E874B028E461E200F72435 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E874AF28E461E200F72435 /* FirstView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,13 @@
 		98769FC428B8A77900DE421F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98769FC628B8A77900DE421F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98769FF028B901E600DE421F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		98E8749C28E43EDD00F72435 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		98E874A428E44BC600F72435 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		98E874A628E44C5D00F72435 /* CategoryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButtonView.swift; sourceTree = "<group>"; };
+		98E874A828E44C8C00F72435 /* PreviewImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewImageView.swift; sourceTree = "<group>"; };
+		98E874AB28E45F5F00F72435 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		98E874AD28E460C800F72435 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		98E874AF28E461E200F72435 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98E8749A28E43D1800F72435 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +74,7 @@
 		98769FB728B8A77700DE421F /* Netflix_Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				98E8749528E43BCC00F72435 /* CodeBase */,
 				98769FB828B8A77700DE421F /* AppDelegate.swift */,
 				98769FBA28B8A77700DE421F /* SceneDelegate.swift */,
 				98769FBC28B8A77700DE421F /* ViewController.swift */,
@@ -68,6 +85,28 @@
 				98769FC628B8A77900DE421F /* Info.plist */,
 			);
 			path = Netflix_Assignment;
+			sourceTree = "<group>";
+		};
+		98E8749528E43BCC00F72435 /* CodeBase */ = {
+			isa = PBXGroup;
+			children = (
+				98E874AA28E44CB000F72435 /* Custom View */,
+				98E874A428E44BC600F72435 /* FirstViewController.swift */,
+				98E874AF28E461E200F72435 /* FirstView.swift */,
+				98E8749C28E43EDD00F72435 /* BaseViewController.swift */,
+				98E874AD28E460C800F72435 /* BaseView.swift */,
+			);
+			path = CodeBase;
+			sourceTree = "<group>";
+		};
+		98E874AA28E44CB000F72435 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				98E874A828E44C8C00F72435 /* PreviewImageView.swift */,
+				98E874A628E44C5D00F72435 /* CategoryButtonView.swift */,
+				98E874AB28E45F5F00F72435 /* CustomLabel.swift */,
+			);
+			path = "Custom View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +125,9 @@
 			dependencies = (
 			);
 			name = Netflix_Assignment;
+			packageProductDependencies = (
+				98E8749928E43D1800F72435 /* SnapKit */,
+			);
 			productName = Netflix_Assignment;
 			productReference = 98769FB528B8A77700DE421F /* Netflix_Assignment.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +156,9 @@
 				Base,
 			);
 			mainGroup = 98769FAC28B8A77700DE421F;
+			packageReferences = (
+				98E8749828E43D1800F72435 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 98769FB628B8A77700DE421F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,8 +187,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				98769FBD28B8A77700DE421F /* ViewController.swift in Sources */,
+				98E874AC28E45F5F00F72435 /* CustomLabel.swift in Sources */,
+				98E874A928E44C8C00F72435 /* PreviewImageView.swift in Sources */,
 				98769FB928B8A77700DE421F /* AppDelegate.swift in Sources */,
+				98E8749D28E43EDE00F72435 /* BaseViewController.swift in Sources */,
+				98E874A728E44C5D00F72435 /* CategoryButtonView.swift in Sources */,
+				98E874A528E44BC600F72435 /* FirstViewController.swift in Sources */,
+				98E874AE28E460C800F72435 /* BaseView.swift in Sources */,
 				98769FF128B901E600DE421F /* SignUpViewController.swift in Sources */,
+				98E874B028E461E200F72435 /* FirstView.swift in Sources */,
 				98769FBB28B8A77700DE421F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +414,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		98E8749828E43D1800F72435 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		98E8749928E43D1800F72435 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98E8749828E43D1800F72435 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 98769FAD28B8A77700DE421F /* Project object */;
 }
