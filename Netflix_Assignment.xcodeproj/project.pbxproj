@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98323BA228E530A900A7DA43 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98323BA128E530A900A7DA43 /* LoginViewController.swift */; };
+		98323BA428E530BE00A7DA43 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98323BA328E530BE00A7DA43 /* LoginView.swift */; };
+		98323BA628E5357700A7DA43 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98323BA528E5357700A7DA43 /* CustomTextField.swift */; };
 		98769FB928B8A77700DE421F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98769FB828B8A77700DE421F /* AppDelegate.swift */; };
 		98769FBB28B8A77700DE421F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98769FBA28B8A77700DE421F /* SceneDelegate.swift */; };
 		98769FBD28B8A77700DE421F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98769FBC28B8A77700DE421F /* ViewController.swift */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		98323BA128E530A900A7DA43 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		98323BA328E530BE00A7DA43 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		98323BA528E5357700A7DA43 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		98769FB528B8A77700DE421F /* Netflix_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98769FB828B8A77700DE421F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98769FBA28B8A77700DE421F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +101,8 @@
 				98E874AF28E461E200F72435 /* FirstView.swift */,
 				98E8749C28E43EDD00F72435 /* BaseViewController.swift */,
 				98E874AD28E460C800F72435 /* BaseView.swift */,
+				98323BA128E530A900A7DA43 /* LoginViewController.swift */,
+				98323BA328E530BE00A7DA43 /* LoginView.swift */,
 			);
 			path = CodeBase;
 			sourceTree = "<group>";
@@ -105,6 +113,7 @@
 				98E874A828E44C8C00F72435 /* PreviewImageView.swift */,
 				98E874A628E44C5D00F72435 /* CategoryButtonView.swift */,
 				98E874AB28E45F5F00F72435 /* CustomLabel.swift */,
+				98323BA528E5357700A7DA43 /* CustomTextField.swift */,
 			);
 			path = "Custom View";
 			sourceTree = "<group>";
@@ -186,6 +195,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98323BA628E5357700A7DA43 /* CustomTextField.swift in Sources */,
+				98323BA228E530A900A7DA43 /* LoginViewController.swift in Sources */,
 				98769FBD28B8A77700DE421F /* ViewController.swift in Sources */,
 				98E874AC28E45F5F00F72435 /* CustomLabel.swift in Sources */,
 				98E874A928E44C8C00F72435 /* PreviewImageView.swift in Sources */,
@@ -195,6 +206,7 @@
 				98E874A528E44BC600F72435 /* FirstViewController.swift in Sources */,
 				98E874AE28E460C800F72435 /* BaseView.swift in Sources */,
 				98769FF128B901E600DE421F /* SignUpViewController.swift in Sources */,
+				98323BA428E530BE00A7DA43 /* LoginView.swift in Sources */,
 				98E874B028E461E200F72435 /* FirstView.swift in Sources */,
 				98769FBB28B8A77700DE421F /* SceneDelegate.swift in Sources */,
 			);

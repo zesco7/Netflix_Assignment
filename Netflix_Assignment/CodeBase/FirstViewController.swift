@@ -14,10 +14,13 @@ class FirstViewController: BaseViewController {
     
     override func loadView() {
         self.view = mainView
+        
+        mainView.contentsButtonWithImage.addTarget(self, action: #selector(contentsButtonWithImageClicked), for: .touchUpInside)
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-                
+    
+    @objc func contentsButtonWithImageClicked() {
+        let vc = LoginViewController()
+        present(vc, animated: true)
+        
     }
 }

@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Base View Controller-->
+        <!--View Controller-->
         <scene sceneID="Yr2-9S-ean">
             <objects>
-                <viewController id="6al-6t-23L" customClass="BaseViewController" customModule="Netflix_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6al-6t-23L" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZWL-Bs-Qjy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

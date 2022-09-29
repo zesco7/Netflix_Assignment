@@ -19,12 +19,6 @@ class BaseViewController: UIViewController {
     
     //func configure() { }
     
-    override func viewDidAppear(_ animated: Bool) {
-        let vc = FirstViewController()
-        vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true)
-    }
-    
 }
 
 
